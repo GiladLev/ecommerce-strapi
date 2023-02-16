@@ -1,4 +1,3 @@
-# React Ecommerce App
+# React Tellerce App
 
-Completed React Ecommerce App Repo
-
+Completed React Tellerce App Repo

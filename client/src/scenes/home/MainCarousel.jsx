@@ -13,7 +13,7 @@ const importAll = (r) =>
   }, {});
 
 export const heroTextureImports = importAll(
-  require.context("../../assets", false, /\.(png|jpe?g|svg)$/)
+  require.context("../../assets", false, /\.(png|jpe?g|svg|webp)$/)
 );
 
 const MainCarousel = () => {
@@ -80,8 +80,8 @@ const MainCarousel = () => {
             margin={isNonMobile ? undefined : "0 auto"}
             maxWidth={isNonMobile ? undefined : "240px"}
           >
-            <Typography color={shades.secondary[200]}>-- NEW ITEMS</Typography>
-            <Typography variant="h1">Summer Sale</Typography>
+            <Typography color={shades.secondary[200]}>-- The best bakery</Typography>
+            <Typography variant="h1">Teller</Typography>
             <Typography
               fontWeight="bold"
               color={shades.secondary[300]}
