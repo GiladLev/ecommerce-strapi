@@ -17,16 +17,17 @@ const Item = ({ item, width }) => {
   } = useTheme();
 
   const { category, price, name, image } = item.attributes;
-  const {
-    data: {
-      attributes: {
-        formats: {
-          medium: { url },
-        },
-      },
-    },
-  } = image;
+  // const {
+  //   data: {
+  //     attributes: {
+  //       formats: {
+  //         medium: { url },
+  //       },
+  //     },
+  //   },
+  // } = image;
 
+  
   return (
     <Box width={width}>
       <Box
@@ -38,7 +39,8 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`http://localhost:2000${url}`}
+          src={`https://teller-server-3ax1.onrender.com${image.data.attributes.url}`}
+
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />
