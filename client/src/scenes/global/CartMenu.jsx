@@ -68,7 +68,7 @@ const CartMenu = () => {
                       alt={item?.name}
                       width="123px"
                       height="164px"
-                      src={`https://teller-server-3ax1.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                      src={`https://teller-server-with-db.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                     />
                   </Box>
                   <Box flex="1 1 60%">

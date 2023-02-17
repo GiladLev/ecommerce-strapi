@@ -27,7 +27,6 @@ const Item = ({ item, width }) => {
   //   },
   // } = image;
 
-  
   return (
     <Box width={width}>
       <Box
@@ -39,8 +38,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`https://teller-server-3ax1.onrender.com${image.data.attributes.url}`}
-
+          src={`https://teller-server-with-db.onrender.com${image.data.attributes.url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />

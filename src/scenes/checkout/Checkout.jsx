@@ -48,7 +48,7 @@ const Checkout = () => {
     };
 
     const response = await fetch(
-      "https://teller-server-3ax1.onrender.com/api/orders",
+      "https://teller-server-with-db.onrender.com/api/orders",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
