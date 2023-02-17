@@ -49,7 +49,6 @@ const ItemDetails = () => {
     getItem();
     getItems();
   }, [itemId]); // eslint-disable-line react-hooks/exhaustive-deps
-  console.log(items);
   return (
     <Box width="80%" m="80px auto">
       <Box display="flex" flexWrap="wrap" columnGap="40px">
@@ -59,7 +58,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`https://teller-server-with-db.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
           />
         </Box>
